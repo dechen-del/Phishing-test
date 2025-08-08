@@ -6,43 +6,100 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      max-width: 600px;
+      background: #f4f8fb;
+      max-width: 700px;
       margin: 60px auto;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       text-align: center;
       color: #333;
     }
+
     h1 {
-      color: #1a73e8;
+      color: #d93025;
+      font-size: 28px;
       margin-bottom: 20px;
     }
+
+    h2 {
+      color: #1a73e8;
+      font-size: 22px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
     p {
       font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 30px;
+      line-height: 1.6;
+      margin-bottom: 20px;
     }
-    a.button {
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+      font-size: 15px;
+    }
+
+    li::before {
+      content: "⚠️";
+      margin-right: 10px;
+    }
+
+    .button {
       display: inline-block;
       background-color: #1a73e8;
       color: white;
-      padding: 14px 30px;
+      padding: 12px 25px;
       border-radius: 5px;
       text-decoration: none;
-      font-size: 18px;
-      cursor: pointer;
+      font-size: 16px;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #155ab6;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 13px;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <h1>Phishing Awareness</h1>
+  <h1>Oops! You Clicked.</h1>
+
   <p>
-    You clicked "Block Login" because this might have been a suspicious login attempt.<br/>
-    Always be cautious and verify the source of emails and links before clicking.<br/>
-    Stay safe online!
+    It’s okay — this was part of a simulated phishing awareness test.<br/>
+    Now’s a great time to learn how to recognize and avoid real phishing attempts.
   </p>
-  <a href="https://your-company-portal.com" class="button" target="_blank">Go to Company Portal</a>
+
+  <h2>Watch: How to Spot a Phish</h2>
+  <p><a href="https://www.youtube.com/watch?v=nb3h3Y7_dEc" target="_blank">Click here to watch the video</a></p>
+
+  <h2>Possible Signs of a Phishing Email:</h2>
+  <ul>
+    <li>Urgent or threatening language</li>
+    <li>Unusual sender address or domain</li>
+    <li>Generic greetings like "Dear user"</li>
+    <li>Unexpected attachments or links</li>
+    <li>Requests for personal or financial information</li>
+  </ul>
+
+  <a href="https://your-company-portal.com" class="button" target="_blank">Return to Company Portal</a>
+
+  <div class="footer">
+    <p>
+      This training is part of our <strong>Cybersecurity Awareness Campaign – October 2025</strong><br/>
+      Created by <strong>Dechen Lhaden</strong>
+    </p>
+  </div>
 </body>
 </html>
